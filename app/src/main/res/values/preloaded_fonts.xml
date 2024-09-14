@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/oxanium_bold</item>
+        <item>@font/oxanium_extrabold</item>
+        <item>@font/oxanium_extralight</item>
+        <item>@font/oxanium_semibold</item>
+    </array>
+</resources>
