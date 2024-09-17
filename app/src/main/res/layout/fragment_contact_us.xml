@@ -13,31 +13,31 @@
         android:layout_height="match_parent"
         android:paddingHorizontal="4dp"
         >
+
         <LinearLayout
-            android:layout_width="104dp"
+            android:layout_width="wrap_content"
             android:layout_height="44dp"
+            android:orientation="vertical"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            android:orientation="vertical"
-            >
+            app:layout_constraintTop_toTopOf="parent">
+
             <TextView
-                android:layout_width="104dp"
+                android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="Contact Us"
-                android:textSize="24dp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/oxanium_semibold"
                 android:layout_gravity="center_horizontal"
-                />
+                android:fontFamily="@font/oxanium_semibold"
+                android:text="Contact Us"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="4dp"
-                android:src="@drawable/slanted_bar"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                />
+                android:src="@drawable/slanted_bar" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                     android:id="@+id/location_ic"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_launcher_background"
+                    android:src="@drawable/location_ic"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     />
@@ -101,7 +101,7 @@
                     android:id="@+id/contact_ic"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_launcher_background"
+                    android:src="@drawable/call_ic"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     />
@@ -138,14 +138,14 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="20dp"
                 >
+
                 <ImageView
                     android:id="@+id/email_ic"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_launcher_background"
+                    android:layout_width="14dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/sms"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/email_textView"
