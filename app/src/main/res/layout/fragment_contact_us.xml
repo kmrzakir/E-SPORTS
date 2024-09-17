@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactUsFragment"
+    android:background="@color/dark_background"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="4dp"
+        >
+        <LinearLayout
+            android:layout_width="104dp"
+            android:layout_height="44dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="30dp"
+                android:text="Contact Us"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/oxanium_semibold"
+                android:layout_gravity="center_horizontal"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="4dp"
+                android:src="@drawable/slanted_bar"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/slanted_rectangle_1"
+            android:paddingLeft="30dp"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="253dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:id="@+id/location_ic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Office Location:"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    app:layout_constraintStart_toEndOf="@+id/location_ic"
+                    android:layout_marginLeft="14dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="215dp"
+                    android:layout_height="17dp"
+                    android:layout_marginTop="8dp"
+                    android:text="3rd Floor, Green Park, Bengaluru"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/inter_semibold"
+                    app:layout_constraintStart_toEndOf="@+id/location_ic"
+                    app:layout_constraintTop_toBottomOf="@id/textView3"
+                    android:layout_marginLeft="14dp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="253dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+
+                >
+                <ImageView
+                    android:id="@+id/contact_ic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/contactno_textview"
+                    android:layout_width="116dp"
+                    android:layout_height="20dp"
+                    android:text="Contact No"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/contact_ic"
+                    android:layout_marginLeft="14dp"
+                    android:fontFamily="@font/oxanium_semibold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="215dp"
+                    android:layout_height="17dp"
+                    android:layout_marginTop="8dp"
+                    android:text="9149776002"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/contact_ic"
+                    app:layout_constraintTop_toBottomOf="@id/contactno_textview"
+                    android:layout_marginLeft="14dp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="253dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:id="@+id/email_ic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/email_textView"
+                    android:layout_width="116dp"
+                    android:layout_height="20dp"
+                    android:text="Email"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/oxanium_semibold"
+
+                    app:layout_constraintStart_toEndOf="@+id/email_ic"
+                    android:layout_marginLeft="14dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="215dp"
+                    android:layout_height="17dp"
+                    android:layout_marginTop="8dp"
+                    android:text="zakirmustafa444@gmail.com"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/inter_semibold"
+                    app:layout_constraintStart_toEndOf="@+id/email_ic"
+                    app:layout_constraintTop_toBottomOf="@id/email_textView"
+                    android:layout_marginLeft="14dp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="377dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:orientation="vertical"
+                >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name*"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:textColor="@color/white"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="First Name"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textColorHint="@color/text_hint_color"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/slaunted_stroke_3"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name*"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:textColor="@color/white"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="Last Name"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textColorHint="@color/text_hint_color"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/slaunted_stroke_3"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email*"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:textColor="@color/white"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="Email"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textColorHint="@color/text_hint_color"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/slaunted_stroke_3"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How did you hear about us?"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:textColor="@color/white"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textColorHint="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/slaunted_stroke_3"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:textColor="@color/white"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:hint="Write Your Message"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textColorHint="@color/text_hint_color"
+                    android:gravity="start"
+                    android:padding="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/slaunted_stroke_3"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="56dp"
+                android:background="@drawable/slanted_rectangle_1"
+                android:text="Submit"
+               android:gravity="center"
+               android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/oxanium_extrabold"
+                />
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

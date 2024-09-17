@@ -3,5 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background">#0f242d</color>
+    <color name="dark_background">#040d17</color>
     <color name="dark_teal">#004c54</color>
+    <color name="text_hint_color">#514747</color>
 </resources>

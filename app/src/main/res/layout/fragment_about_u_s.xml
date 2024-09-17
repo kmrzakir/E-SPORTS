@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AboutUSFragment"
+    android:background="@color/background"
+    >
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:paddingHorizontal="4dp"
+         >
+         <LinearLayout
+             android:layout_width="104dp"
+             android:layout_height="44dp"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintHorizontal_bias="0.5"
+             android:orientation="vertical"
+             >
+             <TextView
+                 android:layout_width="104dp"
+                 android:layout_height="30dp"
+                 android:text="About Us"
+                 android:textSize="24dp"
+                 android:textColor="@color/white"
+                 android:fontFamily="@font/oxanium_semibold"
+                 android:layout_gravity="center_horizontal"
+                 />
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="4dp"
+                 android:src="@drawable/slanted_bar"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="10dp"
+                 />
+         </LinearLayout>
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="342dp"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_marginTop="84dp"
+             app:layout_constraintHorizontal_bias="0.5"
+             android:src="@drawable/image_5"
+             android:scaleType="centerCrop"
+             />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="92dp"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_marginTop="466dp"
+             android:background="@drawable/slanted_image_2"
+             android:orientation="vertical"
+             android:gravity="center"
+             >
+
+             <TextView
+                 android:layout_width="137dp"
+                 android:layout_height="17dp"
+                 android:text="Tournaments played"
+                 android:textColor="@color/white"
+                 android:textSize="14sp"
+                 android:fontFamily="@font/inter_semibold"
+                 android:textAlignment="center"
+                 />
+
+             <TextView
+                 android:layout_width="28dp"
+                 android:layout_height="30dp"
+                 android:text="30"
+                 android:textColor="@color/white"
+                 android:textSize="24sp"
+                 android:layout_marginTop="8dp"
+                 android:fontFamily="@font/oxanium_bold"
+                 android:textAlignment="center"
+                 />
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="92dp"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_marginTop="582dp"
+             android:background="@drawable/slanted_image_2"
+             android:orientation="vertical"
+             android:gravity="center"
+             >
+
+             <TextView
+                 android:layout_width="137dp"
+                 android:layout_height="17dp"
+                 android:text="Tournaments won"
+                 android:textColor="@color/white"
+                 android:textSize="14sp"
+                 android:fontFamily="@font/inter_semibold"
+                 android:textAlignment="center"
+                 />
+
+             <TextView
+                 android:layout_width="28dp"
+                 android:layout_height="30dp"
+                 android:text="10"
+                 android:textColor="@color/white"
+                 android:textSize="24sp"
+                 android:layout_marginTop="8dp"
+                 android:fontFamily="@font/oxanium_bold"
+                 android:textAlignment="center"
+                 />
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="92dp"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_marginTop="698dp"
+             android:background="@drawable/slanted_image_2"
+             android:orientation="vertical"
+             android:gravity="center"
+             >
+
+             <TextView
+                 android:layout_width="137dp"
+                 android:layout_height="17dp"
+                 android:text="Awards won"
+                 android:textColor="@color/white"
+                 android:textSize="14sp"
+                 android:fontFamily="@font/inter_semibold"
+                 android:textAlignment="center"
+                 />
+
+             <TextView
+                 android:layout_width="28dp"
+                 android:layout_height="30dp"
+                 android:text="5"
+                 android:textColor="@color/white"
+                 android:textSize="24sp"
+                 android:layout_marginTop="8dp"
+                 android:fontFamily="@font/oxanium_bold"
+                 android:textAlignment="center"
+                 />
+
+         </LinearLayout>
+         
+         <TextView
+             android:id="@+id/lot_of_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             android:layout_marginTop="822dp"
+             android:text="He is a professional esports gamer who competes in the game Dota 2. He is the carry and star player of the team Evil Geniuses, one of the most successful and popular teams in the world. He is known for his incredible mechanical skills, game sense, and versatility. He can play any hero and any role, and often surprises his opponents with his unconventional picks and builds. "
+             android:textSize="16dp"
+             android:textColor="@color/white"
+             android:fontFamily="@font/inter_semibold"
+             android:textAlignment="center"
+             android:lineHeight="24dp"
+             />
+         <TextView
+             android:layout_width="187dp"
+             android:layout_height="56dp"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/lot_of_text"
+             app:layout_constraintHorizontal_bias="0.5"
+             android:layout_marginTop="40dp"
+             android:background="@drawable/slanted_rectangle_1"
+             android:text="Learn More"
+             android:textColor="@color/white"
+             android:textSize="18sp"
+            android:gravity="center"
+             android:fontFamily="@font/oxanium_semibold"
+             />
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
