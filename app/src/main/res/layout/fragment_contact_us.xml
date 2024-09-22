@@ -284,6 +284,7 @@
                     android:textColor="@color/white"
                     />
                 <Spinner
+                    android:id="@+id/contact_us_spinner"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:textColor="@color/white"

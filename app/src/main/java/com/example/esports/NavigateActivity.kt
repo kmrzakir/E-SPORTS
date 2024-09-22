@@ -9,10 +9,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import org.w3c.dom.Text
 
 class NavigateActivity : AppCompatActivity() {
 
@@ -20,13 +17,14 @@ class NavigateActivity : AppCompatActivity() {
     private lateinit var goToContactUsFragment : TextView
     private lateinit var goToAboutUsFragment : TextView
     private lateinit var goToTournamentsFragment : TextView
+    private lateinit var goToShopFrag : TextView
     private lateinit var linearLayout1 : LinearLayout
     private lateinit var linearLayout2 : LinearLayout
     private lateinit var fragmentContainer : FrameLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_second)
+        setContentView(R.layout.navigate_activity)
 //        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
 //            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -37,6 +35,7 @@ class NavigateActivity : AppCompatActivity() {
         goToContactUsFragment = findViewById(R.id.go_to_contact_us_frag)
         goToAboutUsFragment = findViewById(R.id.go_to_about_us_frag)
         goToTournamentsFragment = findViewById(R.id.go_to_tournament_frag)
+        goToShopFrag = findViewById(R.id.go_to_shop_frag)
         linearLayout1 = findViewById(R.id.linearLayout1)
         linearLayout2 = findViewById(R.id.linearLayout2)
         fragmentContainer = findViewById(R.id.fragment_container)
@@ -57,9 +56,14 @@ class NavigateActivity : AppCompatActivity() {
          goToAboutUsFragment.setOnClickListener {
              loadFragment(AboutUSFragment())
          }
-        ////NAVIGATE TO ABOUT US FRAGMENT
+        //NAVIGATE TO ABOUT US FRAGMENT
         goToTournamentsFragment.setOnClickListener {
             loadFragment(TournamentsFragment())
+        }
+
+        //NAVIGATE TO OUR SHOP FRAGMENT
+        goToShopFrag.setOnClickListener {
+            loadFragment(OurShopFragment())
         }
 
     }
