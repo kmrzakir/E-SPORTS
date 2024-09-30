@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "642498342482",
+    "project_id": "e-sports-261be",
+    "storage_bucket": "e-sports-261be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642498342482:android:c9d0fe6cc70568cc3b398b",
+        "android_client_info": {
+          "package_name": "com.example.esports"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhCYH9DdaC6fVYUbcoW9fgBwlsrOW9oPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

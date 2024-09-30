@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.esports.DataModels.TournamentsModel
 import com.example.esports.R
 
@@ -34,7 +35,7 @@ class TournamentsRecyclerAdapter(private val context : Context,private val tourn
 
 
     override fun onBindViewHolder(holder: TournamentViewHolder, position: Int) {
-        holder.imageView.setImageResource(tournamentDataList[position].image)
+        Glide.with(context).load(tournamentDataList[position].tournamentImageUrl).into(holder.imageView)
         holder.titleTextView.text = tournamentDataList[position].title
         holder.timeTextView.text = tournamentDataList[position].time
         holder.playModeTextView.text = tournamentDataList[position].playMode

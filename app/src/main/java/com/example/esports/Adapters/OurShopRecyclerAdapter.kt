@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.esports.DataModels.OurShopModel
 import com.example.esports.R
 
@@ -31,7 +32,7 @@ class OurShopRecyclerAdapter(private val context : Context,private val ourShopDa
 
 
     override fun onBindViewHolder(holder: OurShopViewHolder, position: Int) {
-        holder.imageView.setImageResource(ourShopDataList[position].image)
+        Glide.with(context).load(ourShopDataList[position].ourShopImageUrl).into(holder.imageView)
         holder.labelTextView.text = ourShopDataList[position].label
         holder.titleTextView.text = ourShopDataList[position].title
         holder.priceTextView.text = ourShopDataList[position].price
